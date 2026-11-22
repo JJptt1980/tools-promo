@@ -14,5 +14,5 @@
 - 補露天截圖 `userscripts-3in1/promo/screens/ruten.png`
 
 ## 已知問題
-- 露天、NBA 兩支腳本的 `@namespace` 還是 `https://github.com/killnopig`（舊帳號名）。改了 Tampermonkey 可能把它當成新腳本、舊的不再自動更新，所以先不動，等使用者決定
+- 2026-11-22 已把露天（v1.3）、NBA（v2.2.2）的 `@namespace` 改成 JJptt1980；已安裝的人可能要刪掉舊版、用安裝連結重裝一次
 - 這個資料夾還沒有 GitHub repo；第 5 步部署 Pages 前再問要不要建
