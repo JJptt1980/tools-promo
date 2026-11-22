@@ -1,7 +1,7 @@
 # STATUS
 
 ## 目前進度
-- userscripts-3in1：/promo 第 3 步，Muse 定稿草稿完成，等使用者同意（ChatGPT 沒生參考圖，額度用完）
+- userscripts-3in1：/promo 第 3 步完成，Muse 定稿已同意，等使用者在 meta.ai 生 hero、og、fb 並下載
 
 ## 已定案的決定
 - 以後所有小工具的廣宣都放 `~/Projects/tools-promo/<廣宣名>/promo/`
