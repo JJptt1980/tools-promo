@@ -9,6 +9,6 @@
 ⛔ 防彈出新分頁：按播放不再跳廣告分頁，切走也不會自動暫停
 
 先裝 Tampermonkey，再點一下就裝好，之後自動更新 👇
-{廣宣頁網址}
+https://jjptt1980.github.io/tools-promo/
 
 #瀏覽器小工具 #Tampermonkey #露天拍賣 #NBA
