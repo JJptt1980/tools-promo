@@ -1,7 +1,7 @@
 # STATUS
 
 ## 目前進度
-- userscripts-3in1：/promo 第 3 步完成，Muse 定稿已同意，等使用者在 meta.ai 生 hero、og、fb 並下載
+- userscripts-3in1：/promo 第 4 步完成，hero/og/fb 已放進 assets/，下一步做廣宣頁
 
 ## 已定案的決定
 - 以後所有小工具的廣宣都放 `~/Projects/tools-promo/<廣宣名>/promo/`
