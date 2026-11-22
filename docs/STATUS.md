@@ -1,7 +1,7 @@
 # STATUS
 
 ## 目前進度
-- userscripts-3in1：/promo 第 4 步完成，hero/og/fb 已放進 assets/，下一步做廣宣頁
+- userscripts-3in1：/promo 第 5 步，廣宣頁與 FB 草稿完成，還沒部署（等使用者決定 GitHub repo 與 Pages）
 
 ## 已定案的決定
 - 以後所有小工具的廣宣都放 `~/Projects/tools-promo/<廣宣名>/promo/`

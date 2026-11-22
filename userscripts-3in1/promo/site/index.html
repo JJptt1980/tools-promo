@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>瀏覽器小工具｜裝一次，少點幾百下</title>
+<meta name="description" content="三個免費的瀏覽器小工具：露天賣場自動翻頁、NBA Box Score 欄位置前與排序、防彈出新分頁。裝一次，少點幾百下。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="瀏覽器小工具｜裝一次，少點幾百下">
+<meta property="og:description" content="露天自動翻頁、NBA 數據排序、擋掉播放彈窗。免費、開源、不收資料。">
+<meta property="og:image" content="img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{--teal:#0F766E;--teal-d:#0B5A54;--orange:#F59E0B;--bg:#FAFAF7;--card:#fff;--text:#1F2937;--muted:#6B7280;--line:#E7E5E0}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;line-height:1.7}
+  a{color:var(--teal)}
+  .wrap{max-width:960px;margin:0 auto;padding:0 16px}
+  header{padding:40px 0 24px;text-align:center}
+  header img{width:100%;max-width:880px;border-radius:16px;display:block;margin:0 auto 24px}
+  h1{font-size:clamp(28px,7vw,44px);color:var(--teal);margin:0 0 8px;line-height:1.3}
+  .sub{color:var(--muted);margin:0 0 20px}
+  .step{display:inline-block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 16px;text-align:left;font-size:15px}
+  .step b{color:var(--teal)}
+  .tools{display:grid;gap:20px;margin:32px 0}
+  @media(min-width:760px){.tools{grid-template-columns:repeat(3,1fr)}}
+  .tool{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;display:flex;flex-direction:column}
+  .icon{font-size:34px;line-height:1}
+  .tool h2{font-size:19px;margin:10px 0 4px;color:var(--teal-d)}
+  .where{font-size:13px;color:var(--muted);margin:0 0 10px}
+  .tool p.lead{margin:0 0 10px;font-weight:600}
+  .tool ul{margin:0 0 16px;padding-left:20px;font-size:15px}
+  .tool img{width:100%;border-radius:10px;border:1px solid var(--line);margin-bottom:16px}
+  .btn{margin-top:auto;display:block;text-align:center;background:var(--orange);color:#1F2937;font-weight:700;text-decoration:none;padding:12px;border-radius:10px}
+  .btn:hover{filter:brightness(.95)}
+  .src{display:block;text-align:center;font-size:13px;margin-top:8px}
+  .why{background:var(--teal);color:#fff;border-radius:16px;padding:24px;margin:8px 0 32px}
+  .why h2{margin:0 0 8px;font-size:20px}
+  .why ul{margin:0;padding-left:20px}
+  footer{color:var(--muted);font-size:13px;text-align:center;padding:24px 0 40px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img src="img/hero.jpg" alt="裝一次，少點幾百下：三個瀏覽器小工具" width="1200" height="675">
+    <h1>裝一次，少點幾百下</h1>
+    <p class="sub">三個免費的瀏覽器小工具，把網頁上重複的動作交給它。</p>
+    <div class="step"><b>先裝一次：</b>瀏覽器安裝 <a href="https://www.tampermonkey.net/" target="_blank" rel="noopener">Tampermonkey（篡改猴）</a>，再按下面想要的「安裝」，在跳出的畫面按「安裝」就好。</div>
+  </header>
+
+  <section class="tools">
+    <article class="tool">
+      <div class="icon">🛍️</div>
+      <h2>露天賣場自動翻頁</h2>
+      <p class="where">露天拍賣賣場頁</p>
+      <p class="lead">往下捲就自動接下一頁，跟露天本身一樣快。</p>
+      <ul>
+        <li>直接用露天自己的翻頁，每頁約 0.1 秒</li>
+        <li>每頁之間有「第 N 頁」分隔線</li>
+        <li>換頁不會跳回頂端，最後一頁自動停</li>
+      </ul>
+      <a class="btn" href="https://raw.githubusercontent.com/JJptt1980/ruten-autopager/main/ruten-autopager.user.js">安裝</a>
+      <a class="src" href="https://github.com/JJptt1980/ruten-autopager" target="_blank" rel="noopener">說明與原始碼</a>
+    </article>
+
+    <article class="tool">
+      <div class="icon">🏀</div>
+      <h2>NBA Box Score 欄位置前與排序</h2>
+      <p class="where">NBA.com box score 頁面</p>
+      <p class="lead">想看哪一欄就拉到最前面，一鍵排出得分王、籃板王。</p>
+      <img src="img/nba.png" alt="NBA box score 加上排序按鈕的畫面" loading="lazy">
+      <ul>
+        <li>📌 任一欄移到球員名字後面</li>
+        <li>⇅ 高到低、低到高、還原</li>
+        <li>⭐ 內建 9 種配置，也能存自己的</li>
+      </ul>
+      <a class="btn" href="https://raw.githubusercontent.com/JJptt1980/nba-boxscore-sort/main/nba-boxscore-sort.user.js">安裝</a>
+      <a class="src" href="https://github.com/JJptt1980/nba-boxscore-sort" target="_blank" rel="noopener">說明與原始碼</a>
+    </article>
+
+    <article class="tool">
+      <div class="icon">⛔</div>
+      <h2>防彈出新分頁</h2>
+      <p class="where">特定影音網站</p>
+      <p class="lead">按播放不再跳廣告分頁，切走也不會自動暫停。</p>
+      <ul>
+        <li>擋掉點播放時跳出的外部新分頁和彈窗</li>
+        <li>站內連結照常可以點</li>
+        <li>切到別的分頁，影片繼續播</li>
+      </ul>
+      <a class="btn" href="https://raw.githubusercontent.com/JJptt1980/xxxx-no-popup/main/xxxx-no-popup.user.js">安裝</a>
+      <a class="src" href="https://github.com/JJptt1980/xxxx-no-popup" target="_blank" rel="noopener">說明與原始碼</a>
+    </article>
+  </section>
+
+  <section class="why">
+    <h2>為什麼可以放心裝</h2>
+    <ul>
+      <li>免費、開源（MIT），程式碼都在 GitHub 上看得到</li>
+      <li>只在你的瀏覽器裡改畫面，不收集、不傳送任何資料</li>
+      <li>用上面的連結安裝，之後會自動更新</li>
+      <li>每支只做一件事，小而快，不拖慢網頁</li>
+    </ul>
+  </section>
+
+  <footer>非官方工具，與露天拍賣、NBA 無關。· 作者 <a href="https://github.com/JJptt1980" target="_blank" rel="noopener">JJptt1980</a></footer>
+</div>
+</body>
+</html>
