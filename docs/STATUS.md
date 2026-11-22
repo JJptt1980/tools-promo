@@ -1,7 +1,7 @@
 # STATUS
 
 ## 目前進度
-- userscripts-3in1：/promo 5 步全部完成。廣宣頁已上線 https://jjptt1980.github.io/tools-promo/（GitHub Pages，main 分支根目錄）；FB 貼文草稿在 userscripts-3in1/promo/fb-post.md，尚未發文
+- userscripts-3in1：/promo 5 步全部完成。廣宣頁已上線 https://jjptt1980.github.io/tools-promo/（GitHub Pages，main 分支根目錄）；2026-11-22 已發 FB 粉專圖片貼文 https://www.facebook.com/1466948699840024_122103070341554073
 
 ## 已定案的決定
 - 以後所有小工具的廣宣都放 `~/Projects/tools-promo/<廣宣名>/promo/`
@@ -10,7 +10,6 @@
 - 防彈窗對外不寫影片網站名稱、不放該站畫面
 
 ## 下一步
-- 使用者決定要不要發 FB 貼文（配 assets/fb.png），發之前先查今天有沒有發過
 - 補露天截圖 `userscripts-3in1/promo/screens/ruten.png`
 
 ## 已知問題
